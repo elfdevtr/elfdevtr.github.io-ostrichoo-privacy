@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ostrichoo Gizlilik Politikası</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fff4dc;
+      --card: #ffffff;
+      --text: #3b2414;
+      --muted: #75563f;
+      --accent: #8f3410;
+      --border: #f0dcb8;
+      --hero-top: #ffb25b;
+      --hero-bottom: #ffe6b0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1d140e;
+        --card: #2a1e16;
+        --text: #f6e8d6;
+        --muted: #c9b29b;
+        --accent: #ffa56e;
+        --border: #453224;
+        --hero-top: #5c2c12;
+        --hero-bottom: #2a1e16;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+    header { background: linear-gradient(var(--hero-top), var(--hero-bottom)); padding: 20px 16px 28px; }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+    .brand { font-size: 1.25rem; font-weight: 800; }
+    .lang { display: inline-flex; gap: 4px; background: var(--card); border: 1px solid var(--border); border-radius: 999px; padding: 4px; }
+    .lang button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      min-height: 36px;
+      padding: 4px 16px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+    .lang button[aria-pressed="true"] { background: var(--accent); color: var(--card); }
+    .lang button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 4px; }
+    .updated { margin: 0; font-size: 0.95rem; }
+    main { padding: 24px 16px 48px; }
+    .summary { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px 24px; }
+    .summary h2 { margin-top: 0; }
+    .summary ul { margin-bottom: 0; }
+    h2 { font-size: 1.2rem; line-height: 1.3; margin: 32px 0 8px; color: var(--accent); }
+    p { margin: 0 0 12px; }
+    ul { padding-left: 20px; margin: 0 0 12px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); }
+    footer { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 0 16px 32px; }
+    html:not([lang="tr"]) [data-lang="tr"], html:not([lang="en"]) [data-lang="en"] { display: none !important; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="top">
+        <div class="brand">Ostrichoo!</div>
+        <div class="lang" role="group" aria-label="Dil / Language">
+          <button type="button" data-set-lang="tr" aria-pressed="true">Türkçe</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+        </div>
+      </div>
+      <h1><span data-lang="tr">Gizlilik Politikası</span><span data-lang="en">Privacy Policy</span></h1>
+      <p class="updated"><span data-lang="tr">Son güncelleme: 2 Kasım 2026</span><span data-lang="en">Last updated: November 2, 2026</span></p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- ===================== TÜRKÇE ===================== -->
+    <div data-lang="tr">
+      <p>Bu politika, elfdev tarafından yayımlanan <strong>Ostrichoo</strong> (<code>com.elfdev.devekusu</code>) oyununda hangi verilerin nasıl işlendiğini açıklar. Oyun çocuklar için tasarlanmıştır; bu metin ebeveynler ve vasiler için yazılmıştır.</p>
+
+      <section class="summary">
+        <h2>Kısaca</h2>
+        <ul>
+          <li>Hesap açılmaz; ad, e-posta, telefon numarası, konum, fotoğraf veya ses istenmez.</li>
+          <li>Bizim bir sunucumuz yoktur; oyun verileri bize gönderilmez.</li>
+          <li>Reklamlar çocuklara yönelik olarak işaretlenir: kişiselleştirilmez, reklam kimliği kullanılmaz.</li>
+          <li>Uygulama içi satın almalar bir yetişkin sorusunun ardından Google Play üzerinden yapılır.</li>
+        </ul>
+      </section>
+
+      <h2>Telefonda saklanan veriler</h2>
+      <p>Puanlar, alınan eşyalar, rekorlar, günlük ödül ve görev durumu, ses ve dil tercihleri ile satın alma kayıtları telefonda saklanır.</p>
+      <p>Cihazda Android yedekleme açıksa bu oyun verileri, kullanıcının Google hesabındaki yedeğe veya yeni telefona aktarımına dahil edilebilir. Bu yedeği Google yönetir ve bizim erişimimiz yoktur. Reklam altyapısının kendi verileri bu yedeğe dahil edilmez.</p>
+
+      <h2>Reklamlar</h2>
+      <p>Oyunda Google AdMob ile banner, tam ekran video ve isteğe bağlı ödüllü reklamlar gösterilir. Tüm reklam istekleri çocuk kategorisinde ve genel izleyici (G) içerik seviyesinde işaretlenir. Reklam kimliği izni uygulamadan kaldırılmıştır; ilgi alanına dayalı reklam ve yeniden pazarlama kullanılmaz.</p>
+      <p>Reklamların gösterilmesi, sınırlandırılması ve kötüye kullanımın önlenmesi için Google; IP adresi, cihaz ve işletim sistemi bilgileri ile reklam etkileşimleri gibi verileri işleyebilir. Ayrıntılar için <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google'ın gizlilik politikası</a> ve <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google'ın reklam teknolojileri</a> sayfalarına bakabilirsiniz.</p>
+      <p>"Reklamları Kaldır" satın alındığında banner ve geçiş reklamları kalkar. Ödüllü reklamlar isteğe bağlı olarak sunulmaya devam eder.</p>
+
+      <h2>Uygulama içi satın almalar</h2>
+      <p>Ödemeler Google Play tarafından işlenir. Kart veya ödeme bilgilerinize erişimimiz yoktur. Uygulama, satın almayı doğrulamak için Google Play'den gelen satın alma kaydını kullanır ve bu kaydı telefonda saklar. Satın alma adımından önce bir yetişkin sorusu sorulur; ek koruma için Google Play'de satın alma onayı veya Family Link kullanmanızı öneririz.</p>
+
+      <h2>Çocukların gizliliği</h2>
+      <p>Çocuklardan bilerek kişisel bilgi toplamıyoruz. Oyunda sohbet, kullanıcı profili veya kullanıcılar arası paylaşım yoktur. Dış bağlantı olan gizlilik politikası sayfası da bir yetişkin sorusunun ardından açılır.</p>
+
+      <h2>Verilerin silinmesi ve haklarınız</h2>
+      <p>Uygulama verilerini temizlemek veya oyunu kaldırmak telefondaki oyun verilerini siler. Google hesabınızdaki yedeği Android ayarlarından veya Google hesabınızdan yönetebilirsiniz. Satın alınan puanlar, veriler silindikten sonra yedekten geri yüklenemezse geri getirilemeyebilir. Reklamları Kaldır satın alımı Google Play hesabınız üzerinden geri yüklenebilir.</p>
+      <p>Sorularınız ve veri talepleriniz için bize yazabilirsiniz: <a href="mailto:elfdev.tr@gmail.com">elfdev.tr@gmail.com</a></p>
+
+      <h2>Değişiklikler</h2>
+      <p>Bu politika değişirse güncel hali ve tarihi bu sayfada yayımlanır.</p>
+    </div>
+
+    <!-- ===================== ENGLISH ===================== -->
+    <div data-lang="en">
+      <p>This policy explains how data is handled in <strong>Ostrichoo</strong> (<code>com.elfdev.devekusu</code>), published by elfdev. The game is designed for children; this policy is written for parents and guardians.</p>
+
+      <section class="summary">
+        <h2>In short</h2>
+        <ul>
+          <li>There are no accounts. We do not ask for a name, email, phone number, location, photos or audio.</li>
+          <li>We have no server, and game data is not sent to us.</li>
+          <li>Ads are tagged as child-directed: they are not personalized and do not use the advertising ID.</li>
+          <li>In-app purchases go through Google Play, after a grown-up question.</li>
+        </ul>
+      </section>
+
+      <h2>Data kept on the phone</h2>
+      <p>Points, owned items, records, daily reward and mission status, sound and language choices, and purchase records are stored on the phone.</p>
+      <p>If Android backup is on, this game data may be included in the backup in the user's Google account or in a transfer to a new phone. Google manages this backup and we cannot access it. The ad system's own data is excluded from it.</p>
+
+      <h2>Ads</h2>
+      <p>The game shows banner, full-screen video and optional rewarded ads through Google AdMob. All ad requests are tagged for child treatment and the general-audience (G) content rating. The advertising ID permission is removed from the app; interest-based advertising and remarketing are not used.</p>
+      <p>To show and limit ads and to prevent abuse, Google may process data such as IP address, device and operating system information, and ad interactions. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a> and <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">how Google uses advertising technologies</a>.</p>
+      <p>Buying "Remove Ads" removes banner and interstitial ads. Rewarded ads remain available as an option.</p>
+
+      <h2>In-app purchases</h2>
+      <p>Payments are processed by Google Play. We have no access to card or payment details. The app uses the purchase record from Google Play to confirm a purchase, and stores it on the phone. A grown-up question is asked before the purchase step; for extra protection we recommend purchase approvals in Google Play or Family Link.</p>
+
+      <h2>Children's privacy</h2>
+      <p>We do not knowingly collect personal information from children. The game has no chat, user profiles or sharing between users. The only outbound link, this privacy policy, also opens after a grown-up question.</p>
+
+      <h2>Deleting data and your rights</h2>
+      <p>Clearing the app's data or uninstalling the game deletes the game data on the phone. You can manage the backup in your Google account through Android settings or your Google account. Purchased points may not be recoverable once data is deleted, unless a backup restores them. A Remove Ads purchase can be restored through your Google Play account.</p>
+      <p>For questions and data requests, write to us: <a href="mailto:elfdev.tr@gmail.com">elfdev.tr@gmail.com</a></p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the current version and its date are published on this page.</p>
+    </div>
+  </main>
+
+  <footer>© 2026 elfdev · Ostrichoo</footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var buttons = document.querySelectorAll('[data-set-lang]');
+
+      function apply(lang) {
+        root.lang = lang;
+        document.title = lang === 'en' ? 'Ostrichoo Privacy Policy' : 'Ostrichoo Gizlilik Politikası';
+        buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.setLang === lang)); });
+      }
+
+      // Öncelik: ?lang= bağlantısı, sonra kullanıcının önceki seçimi, sonra tarayıcı dili
+      var fromUrl = new URLSearchParams(location.search).get('lang');
+      var saved = null;
+      try { saved = localStorage.getItem('ostrichoo-privacy-lang'); } catch (e) {}
+      var browser = (navigator.language || '').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en';
+      var initial = [fromUrl, saved, browser].filter(function (l) { return l === 'tr' || l === 'en'; })[0];
+      apply(initial);
+
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          apply(b.dataset.setLang);
+          try { localStorage.setItem('ostrichoo-privacy-lang', b.dataset.setLang); } catch (e) {}
+          var url = new URL(location.href);
+          url.searchParams.set('lang', b.dataset.setLang);
+          history.replaceState(null, '', url);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
